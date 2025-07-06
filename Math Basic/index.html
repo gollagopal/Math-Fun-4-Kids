@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Math Fun 4 Kids</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🎲 Math Fun 4 Kids 🎉</h1>
+  </header>
+
+  <!-- Game Mode Buttons -->
+  <div id="mode-buttons">
+    <button onclick="startAddition()">➕ Addition</button>
+    <button onclick="startSubtraction()">➖ Subtraction</button>
+    <button onclick="startSorting()">🔢 Sort Numbers</button>
+    <button onclick="startCounting()">🍎 Count Pictures</button>
+  </div>
+
+  <!-- Main Game Area -->
+  <main>
+    <!-- Question Display -->
+    <div id="question-area">
+      <h2 id="question">Choose a Game Mode to Begin!</h2>
+    </div>
+
+    <!-- Input Area -->
+    <div id="input-area">
+      <input type="number" id="answer" placeholder="Your Answer">
+      <button onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <!-- Sorting Area -->
+    <div id="sorting-area"></div>
+    <div id="counting-area"></div>
+
+    <!-- Feedback -->
+    <div id="feedback"></div>
+
+    <!-- Score -->
+    <div id="score-area">
+      <p>Score: <span id="score">0</span></p>
+      <p>⭐ Stars: <span id="stars">0</span></p>
+      <p>🏆 High Score: <span id="high-score">0</span></p>
+    </div>
+
+    <!-- Next Button -->
+    <button onclick="nextQuestion()" id="next-btn">Next</button>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Math Fun 4 Kids</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
